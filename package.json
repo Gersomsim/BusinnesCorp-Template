@@ -7,5 +7,25 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gersom Hernandez Ramos (gersomhernandez@me.com)",
-  "license": "ISC"
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gersomsim/BusinnesCorp-Template.git"
+  },
+  "keywords": [
+    "Template",
+    "HTML5",
+    "PUG",
+    "Stylus",
+    "TypeScript",
+    "Pug",
+    "Businnes",
+    "Template",
+    "BootStrap",
+    "HTML5"
+  ],
+  "bugs": {
+    "url": "https://github.com/Gersomsim/BusinnesCorp-Template/issues"
+  },
+  "homepage": "https://github.com/Gersomsim/BusinnesCorp-Template#readme"
 }
