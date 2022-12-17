@@ -1,0 +1,11 @@
+{
+  "name": "templatebusinnescorp",
+  "version": "1.0.0",
+  "description": "This is a template in bootstrap 5.2 on html5 this template is developer in Pug, Stylus, TypeScript and rendered with Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gersom Hernandez Ramos (gersomhernandez@me.com)",
+  "license": "ISC"
+}
