@@ -60,6 +60,10 @@ function clean(){
   console.log( 'Cleanning Dist...' );
   return del(['./dist/']);
 }
+function files(){
+  return src('./src/plugins/**/*.*')
+    .pipe(dest('./dist/assets/plugins'));
+}
 function build() {
   const dev_mode = false;
   
@@ -67,8 +71,9 @@ function build() {
   stylusToCss( dev_mode );
   typeScript();
   images();
+  files();
   return src('./package.json');
 }
 
-exports.dev = series( clean, pugToHtml, stylusToCss, typeScript, images, watchFiles );
+exports.dev = series( clean, pugToHtml, stylusToCss, typeScript, files, images, watchFiles );
 exports.build = series(clean,  build );
