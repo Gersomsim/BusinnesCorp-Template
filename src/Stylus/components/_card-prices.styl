@@ -1,0 +1,266 @@
+.generic_content{
+  background-color: #fff;
+  overflow: hidden;
+	position: relative;
+	text-align: center;
+  &:hover {
+    box-shadow: 1px 1px 20px 1px #333;
+    .generic_head_price {
+      .generic_head_content {
+        .head_bg{
+          border-color: primary-color rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) primary-color;
+          color: #fff;
+        }
+        .head {
+          span {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .generic_price_btn {
+      a{
+        background-color: primary-color;
+        color: #fff;
+      }
+    } 
+  }
+  .generic_head_price{
+    margin: 0 0 20px 0;
+	  background-color: #f6f6f6;
+    .generic_head_content {
+      margin: 0 0 50px 0;
+      .head_bg{
+	      border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
+        border-style: solid;
+        border-width: 23px 399px 90px 1411px ;
+        position: absolute;
+      }
+      .head {
+        padding-top: 40px;
+        position: relative;
+        z-index: 1;
+        span{
+          color: #525252;
+          // font-family: "Raleway",sans-serif;
+          font-size: 28px;
+          font-weight: 400;
+          letter-spacing: 2px;
+          margin: 0;
+          padding: 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .generic_price_tag {
+      padding: 0 0 20px;
+      .price {
+        display: block;
+        .sign{
+          color: #414141;
+          display: inline-block;
+          font-family: "Lato",sans-serif;
+          font-size: 28px;
+          font-weight: 400;
+          vertical-align: middle;
+        }
+        .currency{
+          color: #414141;
+          // font-family: "Lato",sans-serif;
+          font-size: 60px;
+          font-weight: 300;
+          letter-spacing: -2px;
+          line-height: 60px;
+          padding: 0;
+          vertical-align: middle;
+        }
+        .cent{
+          color: #414141;
+          display: inline-block;
+          // font-family: "Lato",sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          vertical-align: bottom;
+        }
+        .month{
+          color: #414141;
+          // font-family: "Lato",sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 3px;
+          vertical-align: bottom;
+        }
+      }
+    }
+  }
+  .generic_feature_list {
+    ul{ 
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li{	
+	      color: #a7a7a7;
+        // font-family: "Lato",sans-serif;
+        font-size: 18px;
+        padding: 15px 0;
+        transition: all 0.3s ease-in-out 0s;
+        &:hover{
+          background-color: #E4E4E4;
+          border-left: 5px solid primary-color;
+          transition: all 0.3s ease-in-out 0s;
+          -moz-transition: all 0.3s ease-in-out 0s;
+          -ms-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          -webkit-transition: all 0.3s ease-in-out 0s;
+        }
+        .fa{
+          padding: 0 10px;
+        }
+        span{
+          color: #414141;
+        }
+      }
+    }
+  }
+  .generic_price_btn {
+    margin: 20px 0 32px;
+    a{
+	    border: 1px solid primary-color; 
+      color: primary-color;
+      border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      display: inline-block;
+      // font-family: "Lato",sans-serif;
+      font-size: 18px;
+      outline: medium none;
+      padding: 12px 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+
+
+
+#generic_price_table{
+	margin: 50px 0 50px 0;
+    font-family: 'Raleway', sans-serif;
+}
+.row .table{
+    padding: 28px 0;
+}
+
+
+
+
+/*PRICE BODY CODE START*/
+
+#generic_price_table .generic_content .generic_price_btn{
+	
+}
+
+#generic_price_table .generic_content .generic_price_btn a{
+    
+}
+
+.generic_content,
+.generic_content:hover,
+.generic_content .generic_head_price .generic_head_content .head_bg,
+.generic_content:hover .generic_head_price .generic_head_content .head_bg,
+.generic_content .generic_head_price .generic_head_content .head h2,
+.generic_content:hover .generic_head_price .generic_head_content .head h2,
+.generic_content .price,
+.generic_content:hover .price,
+.generic_content .generic_price_btn a,
+.generic_content:hover .generic_price_btn a{
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+} 
+@media (max-width: 320px) {	
+}
+
+@media (max-width: 767px) {
+	.generic_content{
+		margin-bottom:75px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-3{
+		float:left;
+		width:50%;
+	}
+	
+	.col-md-4{
+		float:left;
+		width:50%;
+	}
+	
+	.generic_content{
+		margin-bottom:75px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (min-width: 1200px) {
+}
+
+
+#generic_price_table_home ul{
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	display: table;
+}
+#generic_price_table_home li{
+	float: left;
+}
+#generic_price_table_home li + li{
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+#generic_price_table_home li a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size: 0px;
+}
+#generic_price_table_home .blue{
+	background: #3498DB;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .emerald{
+	background: primary-color;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .grey{
+	background: #7F8C8D;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .midnight{
+	background: #34495E;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .orange{
+	background: #E67E22;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .purple{
+	background: #9B59B6;
+	transition: all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .red{
+	background: #E74C3C;
+	transition:all 0.3s ease-in-out 0s;
+}
+#generic_price_table_home .turquoise{
+	background: #1ABC9C;
+	transition: all 0.3s ease-in-out 0s;
+}

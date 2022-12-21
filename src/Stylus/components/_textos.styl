@@ -1,0 +1,29 @@
+h2, h3, h4, h5, h6{
+  position: relative;
+  display: inline-block;
+  &:after, &:before{
+    position: absolute;
+    content: '';
+    bottom: 4px;
+    z-index -1;
+  }
+  &:before{
+    border-bottom: 3px dotted secondary-color;
+    left: -2px;
+    bottom: 4px
+    width: 6px;
+    height: 6px;
+  }
+  &:after{
+    border-bottom: 1px solid secondary-color;
+    left: 8px;
+    width: calc(100% - 8px);
+  }
+}
+.icon-title{
+  width: 50px;
+  height: 50px;
+  img{
+    width: 100%;
+  }
+}

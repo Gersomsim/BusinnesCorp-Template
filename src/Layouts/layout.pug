@@ -1,0 +1,12 @@
+extends main-layout
+
+block variables
+block headContent
+  link(rel="stylesheet", href="assets/plugins/bootstrap/css/bootstrap.min.css")
+  link(rel="stylesheet", href="assets/css/style.min.css")
+block bodyContent
+  include ../Partials/header
+  block content 
+  include ../Partials/footer
+  script(src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js") 
+  script(src="assets/js/main.js") 

@@ -42,6 +42,11 @@ function images(){
     .pipe( imagemin() )
     .pipe( dest('./dist/assets/images'));
 }
+function icons(){
+  return src('./src/icons/*.*')
+    .pipe( imagemin() )
+    .pipe( dest('./dist/assets/icons'));
+}
 
 function watchFiles(){
   watch('./src/**/*.pug', pugToHtml );
@@ -72,8 +77,9 @@ function build() {
   typeScript();
   images();
   files();
+  icons()
   return src('./package.json');
 }
 
-exports.dev = series( clean, pugToHtml, stylusToCss, typeScript, files, images, watchFiles );
+exports.dev = series( clean, pugToHtml, stylusToCss, typeScript, icons, files, images, watchFiles );
 exports.build = series(clean,  build );

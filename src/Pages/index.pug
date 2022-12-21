@@ -1,8 +1,53 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
-  body 
+extends ../Layouts/layout
+include ../Partials/preciosCard
+
+block variables 
+  - var title = 'Business Corp'
+block content
+  main
+    #home.on-top
+      .home-call-to-action.container
+        h1 
+          small !{title}
+          br
+          | The best option in business
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus sint asperiores sit qui quae tempore quia magnam molestiae ipsum? Minima odit quam deleniti consectetur laboriosam repellendus quidem voluptatem sequi.
+        p
+          a.button.button-primary(href="") Test system now!
+    .container.my-5
+      .text-center.pb-5
+        h2 Working for your needs
+      .row
+        .col-12.col-md-6 
+          .d-flex.justify-content-start.align-items-center
+            div
+              img.icon-title(src="assets/icons/bulb.svg" alt="icon")
+            h4 The best tecnology 
+          hr
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil, voluptas neque vero nobis quae possimus placeat ullam illo saepe, sint maiores magni deleniti in reiciendis mollitia cum earum ipsa! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ex esse quae ratione minus magnam pariatur odio porro nostrum, perferendis voluptas quia nihil. Ab, repellendus fuga! Quisquam nam tempora natus.
+        .col-12.col-md-6 
+          .row
+            .col-12.col-md-4 
+              img.img-fluid(src="https://dummyimage.com/740x760/333/aaa" alt="")
+            .col-12.col-md-8
+              h4 The best system code
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil, voluptas neque vero nobis quae possimus placeat ullam illo saepe, sint maiores magni deleniti in reiciendis mollitia cum earum ipsa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, necessitatibus unde ipsum quo rem molestias sapiente 
+    .container.pt-4
+      h2 Our best services
+      .row 
+        .col-12.col-md-4 
+          +cardPrice('Project Design', '$', '99', '00', '/Mouth', 
+          ['2GB Bandwidth', '150GB Storage', '12 Accounts', '7 Host Domain', '24/7 Support']
+          , '#', 'Sign in' )
+        .col-12.col-md-4 
+          +cardPrice('Servers', '$', '99', '00', '/Mouth', 
+          ['2GB Bandwidth', '150GB Storage', '12 Accounts', '7 Host Domain', '24/7 Support']
+          , '#', 'Sign in' )
+        .col-12.col-md-4 
+          +cardPrice('Development', '$', '99', '00', '/Mouth', 
+          ['2GB Bandwidth', '150GB Storage', '12 Accounts', '7 Host Domain', '24/7 Support']
+          , '#', 'Sign in' )
+    .container.pt-4
+      h2 Portafolio 
+    .container
+      h2 Ours clients

@@ -1,0 +1,21 @@
+mixin cardPrice( title, sing, currency, cent, mount, list, link, btn )
+  .generic_content
+    .generic_head_price
+      .generic_head_content
+        .head_bg
+        .head
+          span= title
+      //- Area de precio
+      .generic_price_tag
+        span.price
+          span.sign= sing
+          span.currency= currency
+          span.cent= cent
+          span.month= mount
+      //- caracteristicas
+    .generic_feature_list
+      ul 
+        each val in list
+          li= val
+    .generic_price_btn
+      a(href= link)= btn
